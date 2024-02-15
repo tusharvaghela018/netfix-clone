@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: black; */
+}
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+
+    height: 97vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+}
+
+.main .box{
+    background-color: black;
+    height: 97vh;
+    width: 100%;
+    opacity: .70;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    max-width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav span{
+    width: 140px;
+    font-size: 48px;
+    font-weight: 700;
+    color: red;
+    position: relative;
+    z-index: 1;
+}
+
+nav button{
+    position: relative;
+    z-index: 1;
+}
+
+.hero{
+    height: calc(100% - 62px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :first-child{
+    /* font-weight: 900; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2){
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.282);
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: red;
+    font-size: 20px;
+    color: white;
+    padding: 3px 24px;
+    border-radius: 4px;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}
+
+.main input{
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 7px 101px 8px 20px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(241, 239, 239, 0.5);
+}
+
+.hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(57, 56, 56);
+}
+
+.first{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    max-width: 70vw;
+    height: 80vh;
+    margin: auto;
+    color: white;
+}
+
+.secImg{
+    position: relative;
+    /* flex-wrap:wrap; */
+}
+
+.secImg img{
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video{
+    position: absolute;
+    width: 26vw;
+    top: 51px;
+    right: 0;
+}
+
+.first div{
+    display: flex;
+    flex-direction: column;
+}
+
+.first div span:nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.first div span:nth-child(2){
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.third .secImg video{
+    position: absolute;
+    width: 18vw;
+    top: 33px;
+    right: 94px
+}
+
+.faq{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 75vw;
+    height: 80vh;
+    margin: auto;
+    text-align: center;
+}
+
+.faq h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.faq .faqBox{
+    top :16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.faq .faqBox .que{
+
+    max-width: 75vw;
+    height: 65px;
+    background-color: rgb(56, 55, 55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    padding: 0 12px;
+}
+
+.faq .faqBox .que svg{
+    filter: invert();
+}
+
+.faq .faqBox .que:hover{
+    background-color: rgb(38, 37, 37);;
+}
